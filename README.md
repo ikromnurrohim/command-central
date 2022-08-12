@@ -2,18 +2,18 @@
 Install dan Config Command Central
 
 
-### Download
+## Download
 
-  LNUX
+  Linux
   ```console
   wget -O https://empowersdc.softwareag.com/ccinstallers/cc-def-10.7-fix1-lnxamd64.sh
   ```
-   WINDOWS
+  Windows
   ```console
   http://empowersdc.softwareag.com/ccinstallers/cc-def-10.2-fix2-w64.zip
   ```
 
-### Install 
+## Install 
   Linux
   ```console
   chmod +x cc-def-10.7-fix1-lnxamd64.sh
@@ -40,6 +40,7 @@ Install dan Config Command Central
   ```desciption
     Setelah install, nyalakan dulu SPM nya, baru nyalakan CCE nya.
     dan di server tujuan harus nyala juga SPM nya
+    untuk mengakses web console command central nya di https://<ip>:8091
   ```
 
 
