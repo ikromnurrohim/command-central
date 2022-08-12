@@ -18,16 +18,11 @@ Install dan Config Command Central
   ```console
   chmod +x cc-def-10.7-fix1-lnxamd64.sh
   ./cc-def-10.7-fix1-lnxamd64.sh --accept-license -d /appl/cc -p admin123 -c 8200 -s 8202 -S 8203
-  sudo firewall-cmd --add-port=8200/tcp --permanent
-  sudo firewall-cmd --add-port=8202/tcp --permanent
-  sudo firewall-cmd --add-port=8203/tcp --permanent
-  sudo firewall-cmd --add-port=8091/tcp --permanent
-  sudo firewall-cmd --reload
-  sudo firewall-cmd --list-all
+
   ```
 
   ```desciption
-    Argument  Value
+    Argument          Value
     --accept-license  Indicates that you accept the Software AG product license.
     -d path           (-d C:\CCE)   Full path to the installation directory in which you are going to install Command Central.
     -p password       (-p manage123) Password to use for the Command Central Administrator user account.
@@ -36,6 +31,17 @@ Install dan Config Command Central
     -S port number    (-S 8203) HTTPS port for Command Central to communicate with the local Platform Manager.
     -s port number    (-s 8202) HTTP port for Command Central to communicate with the local Platform Manager.
   ```
+
+  ```console
+  sudo firewall-cmd --add-port=8200/tcp --permanent
+  sudo firewall-cmd --add-port=8202/tcp --permanent
+  sudo firewall-cmd --add-port=8203/tcp --permanent
+  sudo firewall-cmd --add-port=8091/tcp --permanent
+  sudo firewall-cmd --reload
+  sudo firewall-cmd --list-all
+  ```
+
+
 
   ```desciption
     Setelah install, nyalakan dulu SPM nya, baru nyalakan CCE nya.
